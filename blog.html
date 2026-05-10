@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read expert fitness, nutrition, and wellness articles on our FitLife Pro blog.">
+  <title>Blog - FitLife Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #16A34A;">💪</span>FitLife<span>Pro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+          <li class="nav-item"><a class="nav-link" href="diet.html">Diet & Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="bmi.html">BMI Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container-lg">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Blog</span>
+      </div>
+      <h1 class="page-hero-title">Fitness & Wellness Blog</h1>
+      <p class="section-desc">Expert insights, tips, and inspiration for your health journey</p>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="section-tight">
+    <div class="container-lg">
+      <div class="featured-banner" style="background: linear-gradient(135deg, #16A34A 0%, #15803D 100%);">
+        <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Featured article" style="opacity: 0.3;">
+        <div class="featured-banner-content">
+          <span class="badge-orange" style="display: inline-block; margin-bottom: 12px;">Featured</span>
+          <h2 style="color: white; font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 900; line-height: 1.2; margin-bottom: 12px;">The Science Behind Metabolism and How to Boost It</h2>
+          <p style="color: rgba(255,255,255,0.85); max-width: 600px; margin-bottom: 20px;">Discover the proven methods to increase your metabolic rate and burn more calories throughout the day.</p>
+          <a href="#" class="btn-primary-green">Read Full Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="page-toolbar section-tight">
+    <div class="container-lg">
+      <div class="row g-3 align-items-end">
+        <div class="col-lg-6">
+          <div class="search-bar-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search articles..." data-search-input="blogContainer">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div data-filter-group="#blogContainer">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="mental-health">Mental Health</button>
+            <button class="filter-btn" data-filter="recovery">Recovery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Articles Grid -->
+  <section>
+    <div class="container-lg">
+      <div class="row g-4" id="blogContainer">
+        <!-- Nutrition -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="nutrition" data-search-title="5 Superfoods for Muscle Recovery">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Superfoods article" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 8, 2026</span>
+                <span class="badge-green">Nutrition</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">5 Superfoods for Muscle Recovery</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Accelerate your recovery with these nutrient-dense foods that support muscle repair and growth after intense workouts.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Protein</span>
+                <span class="nutrition-badge">Recovery</span>
+                <span class="nutrition-badge">Health</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="nutrition" data-search-title="Complete Guide to Macronutrients">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Macronutrients guide" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 5, 2026</span>
+                <span class="badge-green">Nutrition</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Complete Guide to Macronutrients</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Everything you need to know about proteins, carbs, and fats - how to calculate and balance them for your goals.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Macros</span>
+                <span class="nutrition-badge">Nutrition</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="nutrition" data-search-title="Hydration for Peak Performance">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hydration article" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 2, 2026</span>
+                <span class="badge-green">Nutrition</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Hydration for Peak Performance</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Proper hydration strategies to maximize workout performance and recovery. Learn optimal drinking patterns.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Hydration</span>
+                <span class="nutrition-badge">Performance</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="training" data-search-title="HIIT vs Steady State: Which Is Better?">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HIIT comparison" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 30, 2026</span>
+                <span class="badge-orange">Training</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">HIIT vs Steady State: Which Is Better?</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Compare high-intensity interval training with steady-state cardio to determine what works best for your goals.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Cardio</span>
+                <span class="nutrition-badge">Training</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="training" data-search-title="Progressive Overload: The Key to Strength Gains">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Progressive overload" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 28, 2026</span>
+                <span class="badge-orange">Training</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Progressive Overload: The Key to Strength Gains</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Master the principle of progressive overload to continuously improve your strength and muscle building results.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Strength</span>
+                <span class="nutrition-badge">Growth</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="training" data-search-title="Home Workouts: Equipment-Free Gains">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Home workouts" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 25, 2026</span>
+                <span class="badge-orange">Training</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Home Workouts: Equipment-Free Gains</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Build muscle and strength without gym equipment using bodyweight exercises and creative training methods.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Home</span>
+                <span class="nutrition-badge">Bodyweight</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mental Health -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="mental-health" data-search-title="The Power of Mindful Exercise">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mindful exercise" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 22, 2026</span>
+                <span class="badge-blue">Mental Health</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">The Power of Mindful Exercise</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Transform your fitness journey by incorporating mindfulness during workouts for better mental and physical results.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Mindfulness</span>
+                <span class="nutrition-badge">Mental Health</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="mental-health" data-search-title="Fitness as Stress Relief">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Stress relief" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 20, 2026</span>
+                <span class="badge-blue">Mental Health</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Fitness as Stress Relief</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">How regular exercise helps reduce stress, anxiety, and depression while improving overall mental well-being.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Stress</span>
+                <span class="nutrition-badge">Wellness</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recovery -->
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="recovery" data-search-title="Active Recovery: Do You Really Need It?">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Active recovery" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 18, 2026</span>
+                <span class="badge-red">Recovery</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Active Recovery: Do You Really Need It?</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Understand the science behind active recovery and how to incorporate it effectively into your training routine.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Recovery</span>
+                <span class="nutrition-badge">Rest</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" data-category="recovery" data-search-title="Sleep and Fitness: The Missing Link">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sleep and fitness" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 Apr 15, 2026</span>
+                <span class="badge-red">Recovery</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Sleep and Fitness: The Missing Link</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Discover how quality sleep impacts your fitness results and learn strategies to improve sleep for better gains.</p>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px;">
+                <span class="nutrition-badge">Sleep</span>
+                <span class="nutrition-badge">Recovery</span>
+              </div>
+              <a href="#" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-lg">
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <h5>FitLife Pro</h5>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 8px;">Your complete health and fitness platform.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="diet.html">Nutrition</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p style="font-size: 0.9rem;">📧 support@fitlifepro.com</p>
+          <p style="font-size: 0.9rem;">📞 +1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <p style="margin: 0;">&copy; 2026 FitLife Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

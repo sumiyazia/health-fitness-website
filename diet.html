@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover healthy meal plans, nutrition guides, and recipes tailored to your fitness goals.">
+  <title>Diet & Nutrition - FitLife Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #16A34A;">💪</span>FitLife<span>Pro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+          <li class="nav-item"><a class="nav-link" href="diet.html">Diet & Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="bmi.html">BMI Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container-lg">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Diet & Nutrition</span>
+      </div>
+      <h1 class="page-hero-title">Nutrition Plans & Meal Guides</h1>
+      <p class="section-desc">Fuel your body with science-backed nutrition plans designed for your goals</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="page-toolbar section-tight">
+    <div class="container-lg">
+      <div class="row g-3 align-items-end">
+        <div class="col-lg-6">
+          <div class="search-bar-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search meal plans..." data-search-input="dietContainer">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div data-filter-group="#dietContainer">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="high-protein">High Protein</button>
+            <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+            <button class="filter-btn" data-filter="pcos">PCOS Friendly</button>
+            <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diet Plans Grid -->
+  <section>
+    <div class="container-lg">
+      <div class="row g-4" id="dietContainer">
+        <!-- High Protein Plans -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="high-protein" data-search-title="Muscle Building Protein Plan">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="High protein meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-green">High Protein</span>
+                <span class="badge-blue">2,800 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Muscle Building Protein Plan</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">175g protein daily with nutrient timing for optimal muscle growth and recovery.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 7-Day Meal Plan ✓ Recipe Guide ✓ Shopping List</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="high-protein" data-search-title="Lean Protein Shred">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Lean protein meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-green">High Protein</span>
+                <span class="badge-blue">2,200 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Lean Protein Shred</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">150g protein with optimized macros for fat loss while preserving lean mass.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 7-Day Meal Plan ✓ Macro Calculator ✓ Tips</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weight Loss Plans -->
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="weight-loss" data-search-title="1500 Calorie Deficit Plan">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weight loss meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-orange">Weight Loss</span>
+                <span class="badge-blue">1,500 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">1500 Calorie Deficit Plan</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Moderate deficit diet perfect for steady weight loss with sustained energy levels.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 14-Day Meal Plan ✓ Grocery List ✓ Prep Guide</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" data-category="weight-loss" data-search-title="Low-Carb Weight Loss">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Low carb meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-orange">Weight Loss</span>
+                <span class="badge-blue">1,800 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Low-Carb Weight Loss</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Reduced carbs with focus on healthy fats and protein for sustained ketosis.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 21-Day Meal Plan ✓ Keto Recipes ✓ Guide</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PCOS Plans -->
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="pcos" data-search-title="PCOS Balance Plan">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="PCOS friendly meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-red">PCOS Friendly</span>
+                <span class="badge-blue">2,000 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">PCOS Balance Plan</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Scientifically designed for PCOS management with low glycemic index foods.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 28-Day Plan ✓ Hormonal Support ✓ Tips</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="pcos" data-search-title="Anti-Inflammatory PCOS Diet">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anti-inflammatory meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-red">PCOS Friendly</span>
+                <span class="badge-blue">2,100 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Anti-Inflammatory PCOS Diet</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Focus on inflammation reduction with omega-3 rich foods for PCOS management.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 14-Day Meal Plan ✓ Recipes ✓ Guide</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vegetarian Plans -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="vegetarian" data-search-title="Vegetarian Protein Power">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vegetarian protein meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-green">Vegetarian</span>
+                <span class="badge-blue">2,400 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Vegetarian Protein Power</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Plant-based protein sources optimized for muscle building and recovery.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 7-Day Meal Plan ✓ Protein Sources ✓ Tips</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="vegetarian" data-search-title="Vegan Balanced Nutrition">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vegan meal" class="diet-card-img">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 flex-wrap mb-2">
+                <span class="badge-green">Vegetarian</span>
+                <span class="badge-blue">2,200 cal/day</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Vegan Balanced Nutrition</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Complete vegan nutrition with all essential amino acids and micronutrients.</p>
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px;">✓ 21-Day Meal Plan ✓ Recipes ✓ Guide</div>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Tips -->
+  <section class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Expert Tips</span>
+        <h2 class="section-title">Nutrition <span class="highlight">Guidelines</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #E5E7EB;">
+            <div style="width: 48px; height: 48px; border-radius: 8px; background: #DCFCE7; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px;">💧</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Hydration Matters</h5>
+            <p style="color: #6B7280; font-size: 0.9rem;">Drink at least 2-3 liters of water daily. Proper hydration boosts metabolism and aids digestion.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #E5E7EB;">
+            <div style="width: 48px; height: 48px; border-radius: 8px; background: #FEF3C7; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px;">🥗</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Whole Foods First</h5>
+            <p style="color: #6B7280; font-size: 0.9rem;">Focus on whole, unprocessed foods. They're nutrient-dense and keep you full longer.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid #E5E7EB;">
+            <div style="width: 48px; height: 48px; border-radius: 8px; background: #E0F2FE; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px;">⏰</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Meal Timing</h5>
+            <p style="color: #6B7280; font-size: 0.9rem;">Eat within an hour post-workout. Timing your meals optimizes recovery and muscle growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-lg">
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <h5>FitLife Pro</h5>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 8px;">Your complete health and fitness platform.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p style="font-size: 0.9rem;">📧 support@fitlifepro.com</p>
+          <p style="font-size: 0.9rem;">📞 +1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <p style="margin: 0;">&copy; 2026 FitLife Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

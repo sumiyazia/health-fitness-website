@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitLife Pro - Your complete health and fitness platform with workouts, nutrition plans, and personalized fitness guidance.">
+  <meta name="keywords" content="fitness, workouts, nutrition, diet plans, BMI calculator, health">
+  <title>FitLife Pro - Transform Your Health & Fitness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #16A34A;">💪</span>FitLife<span>Pro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workouts.html">Workouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="diet.html">Diet & Nutrition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bmi.html">BMI Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container-lg">
+      <div class="row align-items-center gap-4">
+        <div class="col-lg-6 reveal">
+          <div class="hero-badge">
+            <span>✓ Trusted by 50K+ Users</span>
+          </div>
+          <h1 class="hero-title">
+            Transform Your Body & <span class="accent">Mind</span>
+          </h1>
+          <p class="hero-subtitle">
+            Join thousands of people achieving their fitness goals with our personalized workouts, nutrition plans, and expert guidance.
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="workouts.html" class="btn-primary-green">Explore Workouts</a>
+            <a href="#features" class="btn-outline-green">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <span class="num" data-target="50000" data-suffix="K+">0</span>
+              <span class="label">Active Members</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="num" data-target="1000" data-suffix="+">0</span>
+              <span class="label">Workouts</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="num" data-target="98" data-suffix="%">0</span>
+              <span class="label">Satisfaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal delay-1">
+          <div class="hero-img-wrapper">
+            <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness trainer helping client with workout">
+            <div class="hero-floating-card card-1" style="background: #DCFCE7;">
+              <div class="icon" style="background: #84CC16; color: white;">⚡</div>
+              <div><strong>Fast Results</strong><br><span style="font-size: 0.75rem; color: #6B7280;">In just 4 weeks</span></div>
+            </div>
+            <div class="hero-floating-card card-2" style="background: #FEF3C7;">
+              <div class="icon" style="background: #F97316; color: white;">🎯</div>
+              <div><strong>Expert Plans</strong><br><span style="font-size: 0.75rem; color: #6B7280;">Personalized for you</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section id="features" class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Featured Programs</span>
+        <h2 class="section-title">Popular <span class="highlight">Workout Categories</span></h2>
+        <p class="section-desc">Choose from our most popular fitness programs designed by professionals</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="category-card">
+            <img src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weight loss workouts">
+            <div class="category-card-overlay">
+              <h4>Weight Loss</h4>
+              <span>45+ Programs</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="category-card">
+            <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Strength training">
+            <div class="category-card-overlay">
+              <h4>Strength Training</h4>
+              <span>60+ Programs</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="category-card">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Yoga and stretching">
+            <div class="category-card-overlay">
+              <h4>Yoga & Stretching</h4>
+              <span>35+ Programs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="workouts.html" class="btn-primary-green">View All Workouts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container-lg">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 text-center reveal" style="color: white;">
+          <div class="stat-item">
+            <span class="num" data-target="100" data-suffix="K+">0</span>
+            <span class="label">Calories Burned</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center reveal delay-1" style="color: white;">
+          <div class="stat-item">
+            <span class="num" data-target="75" data-suffix="K+">0</span>
+            <span class="label">Workouts Completed</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center reveal delay-2" style="color: white;">
+          <div class="stat-item">
+            <span class="num" data-target="45" data-suffix="K+">0</span>
+            <span class="label">Success Stories</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 text-center reveal delay-3" style="color: white;">
+          <div class="stat-item">
+            <span class="num" data-target="24" data-suffix="/7">0</span>
+            <span class="label">Expert Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Diet Section -->
+  <section class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Nutrition</span>
+        <h2 class="section-title">Fuel Your Body With <span class="highlight">Healthy Meals</span></h2>
+        <p class="section-desc">Curated meal plans and recipes to support your fitness journey</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="High protein meals">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-green">High Protein</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827;">High Protein Diet Plan</h5>
+              <p style="font-size: 0.9rem; color: #6B7280; margin: 8px 0;">Build muscle with our scientifically-designed protein-rich meal plans.</p>
+              <a href="diet.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">View Plans →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Balanced nutrition">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-blue">Balanced</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827;">Balanced Nutrition</h5>
+              <p style="font-size: 0.9rem; color: #6B7280; margin: 8px 0;">Maintain optimal health with our comprehensive balanced meal planning.</p>
+              <a href="diet.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">View Plans →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="diet-card">
+            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="PCOS friendly meals">
+            <div class="diet-card-body">
+              <div class="d-flex gap-2 mb-2">
+                <span class="badge-red">PCOS Friendly</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827;">PCOS-Friendly Diets</h5>
+              <p style="font-size: 0.9rem; color: #6B7280; margin: 8px 0;">Specialized meal plans designed for PCOS management and wellness.</p>
+              <a href="diet.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">View Plans →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Calculator Preview -->
+  <section>
+    <div class="container-lg">
+      <div class="row align-items-center gap-4">
+        <div class="col-lg-6 reveal">
+          <span class="section-label">Health Assessment</span>
+          <h2 class="section-title">Know Your <span class="highlight">BMI</span></h2>
+          <p class="section-desc">Understanding your Body Mass Index is the first step towards your fitness journey.</p>
+          <ul style="list-style: none; padding: 0; margin-top: 24px;">
+            <li style="margin-bottom: 16px; display: flex; gap: 12px; align-items: flex-start;">
+              <span style="width: 24px; height: 24px; border-radius: 50%; background: #DCFCE7; display: flex; align-items: center; justify-content: center; color: var(--green-dark); font-weight: bold; flex-shrink: 0;">✓</span>
+              <span style="color: #374151;">Get personalized health recommendations based on your BMI</span>
+            </li>
+            <li style="margin-bottom: 16px; display: flex; gap: 12px; align-items: flex-start;">
+              <span style="width: 24px; height: 24px; border-radius: 50%; background: #DCFCE7; display: flex; align-items: center; justify-content: center; color: var(--green-dark); font-weight: bold; flex-shrink: 0;">✓</span>
+              <span style="color: #374151;">Track your progress with our advanced analytics</span>
+            </li>
+            <li style="margin-bottom: 16px; display: flex; gap: 12px; align-items: flex-start;">
+              <span style="width: 24px; height: 24px; border-radius: 50%; background: #DCFCE7; display: flex; align-items: center; justify-content: center; color: var(--green-dark); font-weight: bold; flex-shrink: 0;">✓</span>
+              <span style="color: #374151;">Receive customized workout and diet recommendations</span>
+            </li>
+          </ul>
+          <a href="bmi.html" class="btn-primary-green mt-4">Calculate BMI Now</a>
+        </div>
+        <div class="col-lg-6 reveal delay-1">
+          <img src="https://images.pexels.com/photos/4545182/pexels-photo-4545182.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BMI calculation visualization" style="border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.13);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Success Stories</span>
+        <h2 class="section-title">What Our Members <span class="highlight">Say</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p style="margin-top: 12px; margin-bottom: 16px; color: #374151;">"FitLife Pro helped me lose 15kg in 3 months! The personalized workouts and meal plans are amazing."</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Sarah testimonial" class="testimonial-avatar">
+              <div>
+                <strong style="color: #111827; display: block;">Sarah Johnson</strong>
+                <span style="font-size: 0.8rem; color: #6B7280;">Fitness Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p style="margin-top: 12px; margin-bottom: 16px; color: #374151;">"The BMI calculator and personalized recommendations completely changed my fitness approach."</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Mike testimonial" class="testimonial-avatar">
+              <div>
+                <strong style="color: #111827; display: block;">Mike Chen</strong>
+                <span style="font-size: 0.8rem; color: #6B7280;">Software Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p style="margin-top: 12px; margin-bottom: 16px; color: #374151;">"The blog posts and nutrition guides are incredibly helpful. Best fitness platform I've used!"</p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Emma testimonial" class="testimonial-avatar">
+              <div>
+                <strong style="color: #111827; display: block;">Emma Wilson</strong>
+                <span style="font-size: 0.8rem; color: #6B7280;">Yoga Instructor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog -->
+  <section>
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Insights</span>
+        <h2 class="section-title">Latest From Our <span class="highlight">Blog</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog post about nutrition" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 8, 2026</span>
+                <span class="badge-green">Nutrition</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">5 Superfoods for Muscle Recovery</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Discover the best foods to accelerate your muscle recovery after intense workouts.</p>
+              <a href="blog.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog post about mental health" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 6, 2026</span>
+                <span class="badge-blue">Mental Health</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">The Power of Mindful Exercise</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">How mindfulness during workouts can transform your fitness journey and mental well-being.</p>
+              <a href="blog.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="blog-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog post about HIIT training" class="blog-card-img">
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>📅 May 4, 2026</span>
+                <span class="badge-orange">Training</span>
+              </div>
+              <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">HIIT Workouts: More Results, Less Time</h4>
+              <p style="color: #6B7280; margin-bottom: 12px;">Get maximum results with minimum time investment through high-intensity interval training.</p>
+              <a href="blog.html" style="color: #0EA5E9; font-weight: 600; text-decoration: none;">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="blog.html" class="btn-primary-green">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Stay Updated</h2>
+        <p>Get weekly tips, new workouts, and nutrition advice delivered straight to your inbox.</p>
+        <form class="d-flex gap-2 justify-content-center flex-wrap" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required style="flex: 1; min-width: 200px; border: none; border-radius: 8px; padding: 12px 18px; font-size: 0.9rem; outline: none;">
+          <button type="submit" class="btn-primary-green" style="white-space: nowrap; border: none;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-lg">
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <h5>FitLife Pro</h5>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 8px;">Your complete health and fitness platform designed to transform your life.</p>
+          <div style="display: flex; gap: 8px; margin-top: 12px;">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">▶️</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="diet.html">Diet & Nutrition</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Info</h5>
+          <p style="font-size: 0.9rem;">📧 support@fitlifepro.com</p>
+          <p style="font-size: 0.9rem;">📞 +1 (800) 123-4567</p>
+          <p style="font-size: 0.9rem;">📍 123 Fitness Ave, Health City, HC 12345</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <p style="margin: 0;">&copy; 2026 FitLife Pro. All rights reserved. Made with ❤️ for your fitness journey.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

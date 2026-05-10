@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our complete collection of workouts - strength training, weight loss, yoga, HIIT, and more.">
+  <title>Workouts - FitLife Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #16A34A;">💪</span>FitLife<span>Pro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+          <li class="nav-item"><a class="nav-link" href="diet.html">Diet & Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="bmi.html">BMI Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container-lg">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Workouts</span>
+      </div>
+      <h1 class="page-hero-title">Our Workout Programs</h1>
+      <p class="section-desc">Explore our comprehensive collection of workouts designed for every fitness level</p>
+    </div>
+  </section>
+
+  <!-- Search & Filter -->
+  <section class="page-toolbar section-tight">
+    <div class="container-lg">
+      <div class="row g-3 align-items-end">
+        <div class="col-lg-6">
+          <div class="search-bar-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search workouts..." data-search-input="workoutContainer">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div data-filter-group="#workoutContainer">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+            <button class="filter-btn" data-filter="strength">Strength</button>
+            <button class="filter-btn" data-filter="women">Women Fitness</button>
+            <button class="filter-btn" data-filter="hiit">HIIT</button>
+            <button class="filter-btn" data-filter="yoga">Yoga</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workouts Grid -->
+  <section>
+    <div class="container-lg">
+      <div class="row g-4" id="workoutContainer">
+        <!-- Weight Loss -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="weight-loss" data-search-title="30-Minute Fat Burning Cardio">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/4551832/pexels-photo-4551832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fat burning cardio workout" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 30 min</span>
+                <span>🔥 250 cal</span>
+                <span class="badge-green">Beginner</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">30-Minute Fat Burning Cardio</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">High-energy cardio session perfect for burning calories and boosting metabolism.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="weight-loss" data-search-title="Full Body HIIT Blast">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Full body HIIT workout" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 20 min</span>
+                <span>🔥 300 cal</span>
+                <span class="badge-green">Intermediate</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Full Body HIIT Blast</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Intense interval training combining strength and cardio for maximum results.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strength -->
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="strength" data-search-title="Dumbbell Strength Circuit">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dumbbell strength training" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 45 min</span>
+                <span>🔥 200 cal</span>
+                <span class="badge-blue">Advanced</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Dumbbell Strength Circuit</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Build lean muscle with progressive dumbbell exercises targeting all major groups.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" data-category="strength" data-search-title="Push and Pull Day">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/4941767/pexels-photo-4941767.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Push and pull workout" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 50 min</span>
+                <span>🔥 180 cal</span>
+                <span class="badge-blue">Intermediate</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Push and Pull Day</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Classic split workout for optimal strength gains and muscle symmetry.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Women Fitness -->
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="women" data-search-title="Glute and Core Activation">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Glute workout for women" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 25 min</span>
+                <span>🔥 150 cal</span>
+                <span class="badge-green">Beginner</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Glute and Core Activation</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Targeted exercises to strengthen and shape glutes and core muscles.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="women" data-search-title="Pilates for Toning">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3764119/pexels-photo-3764119.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pilates workout" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 40 min</span>
+                <span>🔥 120 cal</span>
+                <span class="badge-green">Beginner</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Pilates for Toning</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Low-impact pilates focusing on flexibility, balance, and lean muscle definition.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIIT -->
+        <div class="col-md-6 col-lg-4 reveal" data-category="hiit" data-search-title="20-Minute HIIT Challenge">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/5921968/pexels-photo-5921968.jpeg?auto=compress&cs=tinysrgb&w=600" alt="HIIT workout challenge" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 20 min</span>
+                <span>🔥 350 cal</span>
+                <span class="badge-red">Advanced</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">20-Minute HIIT Challenge</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Extreme high-intensity intervals perfect for time-conscious fitness enthusiasts.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="hiit" data-search-title="Tabata Conditioning">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/5921968/pexels-photo-5921968.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tabata training" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 16 min</span>
+                <span>🔥 320 cal</span>
+                <span class="badge-red">Advanced</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Tabata Conditioning</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Science-backed 20/10 interval protocol for maximum fat burn and conditioning.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yoga -->
+        <div class="col-md-6 col-lg-4 reveal delay-2" data-category="yoga" data-search-title="Morning Yoga Flow">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Morning yoga flow" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 30 min</span>
+                <span>🔥 80 cal</span>
+                <span class="badge-green">Beginner</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Morning Yoga Flow</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Energizing yoga sequence perfect for starting your day with flexibility and mindfulness.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal" data-category="yoga" data-search-title="Evening Relaxation Yoga">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Relaxation yoga" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 45 min</span>
+                <span>🔥 100 cal</span>
+                <span class="badge-green">Beginner</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Evening Relaxation Yoga</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Calming yoga poses and breathing exercises for deep relaxation and better sleep.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal delay-1" data-category="yoga" data-search-title="Power Yoga for Strength">
+          <div class="workout-card">
+            <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Power yoga" class="workout-card-img">
+            <div class="workout-card-body">
+              <div class="workout-meta">
+                <span>⏱️ 50 min</span>
+                <span>🔥 180 cal</span>
+                <span class="badge-blue">Intermediate</span>
+              </div>
+              <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Power Yoga for Strength</h5>
+              <p style="color: #6B7280; font-size: 0.9rem; margin-bottom: 12px;">Dynamic yoga practice building strength, endurance, and core stability.</p>
+              <a href="#" class="btn-orange" style="font-size: 0.85rem; padding: 8px 16px; display: inline-block;">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-cta-gradient text-center">
+    <div class="container-lg">
+      <h2 style="color: #111827; font-size: 2rem; font-weight: 900; margin-bottom: 12px;">Ready to Transform Your Body?</h2>
+      <p style="color: #6B7280; max-width: 500px; margin: 0 auto 32px;">Start your fitness journey today with our expert-designed workouts and personalized support.</p>
+      <a href="#" class="btn-primary-green">Get Started Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-lg">
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <h5>FitLife Pro</h5>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 8px;">Your complete health and fitness platform.</p>
+          <div style="display: flex; gap: 8px; margin-top: 12px;">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">𝕏</a>
+            <a href="#" class="social-icon">📷</a>
+            <a href="#" class="social-icon">▶️</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diet.html">Nutrition</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p style="font-size: 0.9rem;">📧 support@fitlifepro.com</p>
+          <p style="font-size: 0.9rem;">📞 +1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <p style="margin: 0;">&copy; 2026 FitLife Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

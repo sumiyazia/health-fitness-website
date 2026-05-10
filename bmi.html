@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your BMI and get personalized health recommendations based on your body mass index.">
+  <title>BMI Calculator - FitLife Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container-lg">
+      <a class="navbar-brand" href="index.html">
+        <span style="color: #16A34A;">💪</span>FitLife<span>Pro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="workouts.html">Workouts</a></li>
+          <li class="nav-item"><a class="nav-link" href="diet.html">Diet & Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="bmi.html">BMI Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container-lg">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>BMI Calculator</span>
+      </div>
+      <h1 class="page-hero-title">BMI Calculator</h1>
+      <p class="section-desc">Calculate your Body Mass Index and get personalized health insights</p>
+    </div>
+  </section>
+
+  <!-- BMI Calculator -->
+  <section>
+    <div class="container-lg">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bmi-card">
+            <h2 style="text-align: center; font-weight: 900; color: #111827; margin-bottom: 32px;">Calculate Your BMI</h2>
+
+            <!-- Unit Toggle -->
+            <div style="display: flex; justify-content: center; margin-bottom: 32px;">
+              <div class="unit-toggle">
+                <button class="unit-btn active" data-unit="metric">Metric</button>
+                <button class="unit-btn" data-unit="imperial">Imperial</button>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div style="margin-bottom: 28px;">
+              <label class="form-label-custom">Height</label>
+              <div style="display: flex; gap: 12px;">
+                <input type="number" id="heightInput" class="form-control-custom" placeholder="e.g., 170" style="flex: 1;">
+                <div style="background: #F9FAFB; border: 2px solid #E5E7EB; border-radius: 8px; padding: 10px 16px; display: flex; align-items: center; font-weight: 600; color: #374151; min-width: 60px;">
+                  <span id="heightUnit">cm</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 28px;">
+              <label class="form-label-custom">Weight</label>
+              <div style="display: flex; gap: 12px;">
+                <input type="number" id="weightInput" class="form-control-custom" placeholder="e.g., 70" style="flex: 1;">
+                <div style="background: #F9FAFB; border: 2px solid #E5E7EB; border-radius: 8px; padding: 10px 16px; display: flex; align-items: center; font-weight: 600; color: #374151; min-width: 60px;">
+                  <span id="weightUnit">kg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button id="calculateBmi" class="btn-primary-green w-100" style="padding: 14px; font-size: 1rem; margin-bottom: 28px; border: none;">Calculate BMI</button>
+
+            <!-- Result Box -->
+            <div class="bmi-result-box">
+              <div style="font-size: 0.85rem; color: #6B7280; margin-bottom: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Your BMI Result</div>
+              <div class="bmi-value" id="bmiValue">--</div>
+              <div class="bmi-category" id="bmiCategory" style="color: #6B7280;">--</div>
+
+              <!-- BMI Scale -->
+              <div style="margin-top: 20px;">
+                <div class="bmi-scale">
+                  <div class="bmi-scale-seg underweight"></div>
+                  <div class="bmi-scale-seg normal"></div>
+                  <div class="bmi-scale-seg overweight"></div>
+                  <div class="bmi-scale-seg obese"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 8px; font-size: 0.75rem; color: #6B7280; font-weight: 600;">
+                  <span>Underweight</span>
+                  <span>Normal</span>
+                  <span>Overweight</span>
+                  <span>Obese</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BMI Categories Info -->
+  <section class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Understanding</span>
+        <h2 class="section-title">BMI <span class="highlight">Categories</span></h2>
+        <p class="section-desc">Learn what your BMI result means for your health</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #93C5FD;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #E0F2FE; font-size: 1.2rem; margin-bottom: 12px;">📉</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px; font-size: 0.95rem;">Underweight</h5>
+            <p style="color: #6B7280; font-size: 0.85rem; margin-bottom: 8px;"><strong>BMI < 18.5</strong></p>
+            <p style="color: #6B7280; font-size: 0.85rem;">May indicate insufficient nutrition. Consider consulting a doctor or nutritionist.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-1">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #84CC16;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #DCFCE7; font-size: 1.2rem; margin-bottom: 12px;">✓</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px; font-size: 0.95rem;">Normal Weight</h5>
+            <p style="color: #6B7280; font-size: 0.85rem; margin-bottom: 8px;"><strong>BMI 18.5 - 24.9</strong></p>
+            <p style="color: #6B7280; font-size: 0.85rem;">Healthy range. Maintain with balanced diet and regular exercise.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-2">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #FCD34D;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #FEF3C7; font-size: 1.2rem; margin-bottom: 12px;">⚠️</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px; font-size: 0.95rem;">Overweight</h5>
+            <p style="color: #6B7280; font-size: 0.85rem; margin-bottom: 8px;"><strong>BMI 25 - 29.9</strong></p>
+            <p style="color: #6B7280; font-size: 0.85rem;">Increased health risks. Focus on nutrition and regular workouts.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-3">
+          <div style="background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #FCA5A5;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 8px; background: #FEE2E2; font-size: 1.2rem; margin-bottom: 12px;">🏥</div>
+            <h5 style="font-weight: 700; color: #111827; margin-bottom: 8px; font-size: 0.95rem;">Obese</h5>
+            <p style="color: #6B7280; font-size: 0.85rem; margin-bottom: 8px;"><strong>BMI ≥ 30</strong></p>
+            <p style="color: #6B7280; font-size: 0.85rem;">Health risks present. Consult healthcare provider for guidance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section>
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Guidance</span>
+        <h2 class="section-title">Next Steps After <span class="highlight">BMI Calculation</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 reveal">
+          <div style="background: linear-gradient(135deg, #DCFCE7 0%, #F0FDF4 100%); border-radius: 12px; padding: 32px;">
+            <div style="font-size: 2.5rem; margin-bottom: 12px;">🥗</div>
+            <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Optimize Your Nutrition</h4>
+            <p style="color: #374151; line-height: 1.7;">Choose a diet plan that matches your goals. Explore our nutrition section for customized meal plans and recipes.</p>
+            <a href="diet.html" class="btn-primary-green" style="margin-top: 16px; display: inline-block;">Explore Diet Plans</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal delay-1">
+          <div style="background: linear-gradient(135deg, #FEF3C7 0%, #FEF9E7 100%); border-radius: 12px; padding: 32px;">
+            <div style="font-size: 2.5rem; margin-bottom: 12px;">💪</div>
+            <h4 style="font-weight: 700; color: #111827; margin-bottom: 8px;">Start Your Workout Journey</h4>
+            <p style="color: #374151; line-height: 1.7;">Find workouts tailored to your fitness level. Browse our collection of exercises designed for various goals.</p>
+            <a href="workouts.html" class="btn-primary-green" style="margin-top: 16px; display: inline-block;">Browse Workouts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-section-muted">
+    <div class="container-lg">
+      <div class="section-intro">
+        <span class="section-label">Questions</span>
+        <h2 class="section-title">BMI <span class="highlight">FAQ</span></h2>
+      </div>
+      <div style="max-width: 720px; margin: 0 auto;">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>What does BMI stand for?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            BMI stands for Body Mass Index. It's a measure of body fat based on height and weight that applies to both men and women. It's calculated by dividing weight (kg) by height squared (m²).
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-1">
+          <button class="faq-question">
+            <span>Is BMI accurate for athletes?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            BMI has limitations for athletes and muscular individuals since it doesn't differentiate between muscle and fat. Athletes may have a higher BMI despite being healthy due to muscle mass being heavier than fat.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-2">
+          <button class="faq-question">
+            <span>How can I improve my BMI?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Improve your BMI through a combination of healthy eating, regular exercise, and lifestyle changes. Consult with nutritionists and fitness professionals for personalized guidance tailored to your goals.
+          </div>
+        </div>
+
+        <div class="faq-item reveal delay-3">
+          <button class="faq-question">
+            <span>Should I be concerned about my BMI?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            BMI is a useful screening tool but shouldn't be your only health metric. Factors like fitness level, muscle mass, and overall lifestyle also matter. Consult healthcare professionals for comprehensive health assessment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-lg">
+      <div class="row g-4 mb-4">
+        <div class="col-md-3">
+          <h5>FitLife Pro</h5>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.75); margin-top: 8px;">Your complete health and fitness platform.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="diet.html">Nutrition</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p style="font-size: 0.9rem;">📧 support@fitlifepro.com</p>
+          <p style="font-size: 0.9rem;">📞 +1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <p style="margin: 0;">&copy; 2026 FitLife Pro. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bmi.js"></script>
+</body>
+</html>
